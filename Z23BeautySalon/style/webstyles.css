@@ -1,0 +1,918 @@
+/* Header Styling */
+header#pageHeader
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Verdana, Sans-serif;
+}
+
+header#pageHeader .img-container {
+    float: left;
+}
+
+
+/* Navigation Styling*/
+nav#topNavigation,
+nav#serviceNav, 
+nav#itemNav{
+  text-align: center 
+}
+
+nav a {
+	color: rgb(0, 0 , 0);
+	cursor: pointer;
+	text-decoration: none
+}
+
+
+/*Overall Styling*/
+body {
+	padding: 10px;
+	background-color: #F7F4F0;
+	font-family: Verdana, Sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: rgb(0,0,0);
+	font-weight: bold;
+	line-height: 1.25em;
+	padding: 0px;
+	font-weight: bold;
+}
+
+h1,h2 {
+	text-align: center;
+}
+
+h3,h4,h5,h6 {
+	text-align: left;
+}
+
+.error {
+    color: #ff0000;
+	font-size:15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+    
+
+input[type="submit"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C1B6A4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #AC9E86;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+button[type="submit"] {
+	width: 100%;
+	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C1B6A4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #AC9E86;
+}
+  
+
+/* Home Page | Index.php */
+.login-container {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 10px;
+	z-index: 999;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 50%; /* Set 2 columns per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%; /* Set 1 column per row on even smaller screens */
+    }
+}
+
+.aboutUs {
+	position: relative;
+	width: 100%;
+	height: 400px; 
+	background-color: #d3cbbf;
+	background-size: cover; 
+	background-position: center;
+	display: flex; /* Use flexbox */
+	justify-content: center;
+    align-items: center; /
+}
+		
+.overlay {
+	padding: 8px 30px;
+	color: black;
+	text-align: justify;
+}
+
+.location {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	background-color: #d3cbbf;
+}
+
+.columnLocation {
+	position: relative;
+	float: left;
+	width: 50%;
+	padding: 0 55px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.columnLocation img {
+	justify-content: center;
+}
+
+
+/* Styling for login.php*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+	max-width: 200px;
+}
+
+.dropbtn {
+	background-color: #C1B6A4;
+	font-size: 16px;
+    font-weight: bold;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	max-width: 100%;
+}
+
+.dropdown-content {
+	display: none;
+	position: arelative;
+	background-color: #F6F5EC;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.show {
+	display: block;
+}
+
+.container {
+	display: none;
+}
+
+.accountButton {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	background-color: #C1B6A4;
+	color: white;
+	font-size: 14px;
+    font-weight: bold;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+.accountButton a {
+	text-decoration:none;
+	color: white;
+}
+
+
+/* Styling for /service/index.php */
+.bookingButton {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	background-color: #C1B6A4;
+	color: white;
+	font-size: 16px;
+    font-weight: bold;
+	padding: 12.5px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: -100px;
+	margin-left: auto; 
+}
+
+.bookingButton a {
+	text-decoration:none;
+	color: white;
+}
+
+.bookingButton hover {
+	transform: scale(1.2);
+	background-color: #AC9E86;
+}
+
+/* Styling for item and service list */
+div#container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+div#container .title,
+div#container .itemsList-title {
+  font-size: 2.0rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+div#container .items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  gap: 3rem;
+}
+div#container .service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+  gap: 3rem;
+}
+
+div#container .items-container .item,
+div#container .service-container .item {
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+  background: #E1DACA;
+  box-shadow: 0 0.5rem 1rem rgb(208, 198, 198);
+	outline-offset: -1.0rem;
+  cursor: pointer;
+}
+
+div#container .items-container .item:hover,
+div#container .service-container .item:hover {
+  outline: 0.2rem solid #C1B6A4;
+}
+
+div#container .items-container .item img,
+div#container .service-container .item img {
+  width: auto;
+  height: 10rem;
+}
+
+div#container .items-container .item:hover img,
+div#container .service-container .item:hover img {
+  transform: scale(1.1);
+}
+
+div#container .service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+  gap: 3rem;
+}
+
+div#container .service-container .item .button {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  background:#C1B6A4 ;
+  font-size: 20px;
+  color: white;
+  border-color: #F6F5EC;
+}
+
+#items-preview {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #c7bdad;
+	border: 1px solid #c7bdad;
+	padding: 10px;
+	max-width: 70%;
+	max-height: 70%;
+	overflow: auto;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}   
+#items-preview .preview {
+	display: none;
+	padding: 2rem;
+	text-align: center;
+	background: #c7bdad;
+	position: relative;
+	margin: 2rem;
+	width: 40rem;
+}
+
+#items-preview .preview img {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	max-height: 20rem;
+}
+
+#items-preview .preview .button {
+	flex: 1 1 16rem;
+	padding: 1rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background: #9a9183;
+	font-size: 20px;
+	color: white;
+	border: none;
+}
+#items-preview .preview .button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}     
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	flex: 1 1 16rem;
+	padding: 1rem;
+	font-size: 1.8rem;
+	background: #a29277;
+	font-size: 20px;
+	color: white;
+	border-color: #F6F5EC;
+}
+.close-button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+div#container .items-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #C1B6A4;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+div#container .items-preview .preview img {
+  width: auto;
+  height: 20rem;
+}
+
+div#container .items-preview .preview .button {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  background: #a29277;
+  font-size: 20px;
+  color: white;
+  border-color: #F6F5EC;
+}
+
+div#container .items-preview .preview .button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+div#cart-logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: -100px;
+  margin-left: auto;
+  width: 70px; 
+  height: 70px; 
+  border-radius: 50%; 
+  background-color: #cbbda7;
+  padding: 10px;
+  transition: all 0.3s ease; 
+}
+div#cart-logo a:hover {
+  background-color: #d8b681; 
+}
+div#cart-logo svg {
+  color: #746959;
+  width: 50%; 
+  height: auto; 
+}
+
+/*styling for wishlist/index.php*/
+.wishlist-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.wishlist-heading {
+	font-weight: bold;
+	font-size: 55px;
+	margin-top: 10px;
+}
+
+.wishlist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  gap: 3rem;
+  padding: 20px;
+}		
+
+.cart-item {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	transition: transform 0.3s;
+	margin-bottom: 20px;
+	max-width: auto;
+	background-color: #fefbfb;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative; 
+}
+
+.cart-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: auto;
+    height: 10rem;
+	border-radius: 10px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+/* Hide the spinners */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.checkout-btn,
+.shopping-button,
+.remove-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #8d7f70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover,
+.shopping-button:hover,
+.remove-btn:hover {
+    background-color:#ab9c8c;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+	color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #c13f36;
+}
+
+.wishlist-product-col{
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.total-price {
+  margin-bottom: 10px;
+}
+
+.total-price p {
+  margin: 0;
+  font-weight: bold;
+  font-size:25px;
+  color: #c1291e; 
+}
+
+/*styling for product check out*/
+.checkout-body {
+    background-color: #d6cec2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.payment-container{
+	max-width:auto;
+	margin: 3%;
+	margin-bottom:0;
+	padding: 20px;
+	background-color:#fefbfb;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head{
+	text-align: center;
+	margin-top:20px;
+}
+
+.payment-info{
+	max-width: auto;
+	margin: 0;
+	padding: 15px;
+	background-color:#ece9e3;
+	color: #5b5854;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+	
+.checkout-container {
+    max-width: auto;
+	margin: 3% ;
+	padding: 20px;
+	background-color: #ece9e3;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+}
+
+.summary-section {
+    flex: auto;
+    padding: 20px;
+	background-color: #ece9e3;
+}
+
+.checkout-form {
+    flex: auto;
+    background-color: #d3cbbf;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.confirmation-message {
+	max-width: auto;
+	margin: 0;
+	padding: 20px;
+	background-color: #605B52;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+	
+.error-message {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.form-group-co {
+    margin-bottom: 20px;
+}
+
+.input-label-co {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field-co {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+	box-sizing: border-box;
+}
+
+.confirmation-message {
+    background-color: #F4F4F2;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+	text-align: center;
+}
+	
+.cart-item-co {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+.cart-item-co img {
+    width: auto;
+    height: 10rem;
+	border-radius: 10px;
+}
+
+.cart-item-co .item-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.cart-item-co h4, .cart-item-co p {
+    margin: 0; 
+}
+
+.total-price{
+	font-size:20px;
+}
+
+.checkout-btn{
+	margin-right:1200px;
+}
+
+.styled-button-co {
+	padding: 10px 20px;
+	background-color: #c1b6a4;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+	margin-right:auto;
+}
+
+.styled-button-co:hover {
+	background-color: #2E2B27;
+}
+
+.button-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* styling for post message under wishlist*/
+.post-body{
+	color:#463c2d;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.post-body h2{
+	color:#463c2d;
+}
+
+.order-details {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+	padding: 20px;
+	background-color:#fefbfb;
+	max-width: auto;
+	margin: auto;
+}
+
+.post-body p{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+		
+button#return{
+	padding: 10px 20px;
+	background-color: #ada393;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight:bold;
+	transition: background-color 0.3s ease;
+}
+
+button#return:hover {
+	background-color: #9a9183;
+}
+
+/* Styling for contactus.php */   
+.contactus{
+	padding: 20px;
+}
+
+#contact-form {
+    background-color: #d9d3c8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Styling for booking.php */   
+.form-group {
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+}
+    
+.form-group label {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+    
+.form-group input[type="radio"] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    background-color: #ada393;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+	font-weight:bold;
+    transition: background-color 0.3s ease;
+	color: white;
+}
+
+.styled-button:hover {
+    background-color:  #9a9183;
+}
+        
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20vh; 
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+.checkout-form{
+    padding: 20px;
+    background-color:  #e0dad1;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-details {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #e0dad1;
+    max-width: 600px;
+    margin: auto;
+}
