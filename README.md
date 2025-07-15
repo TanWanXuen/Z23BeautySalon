@@ -2,8 +2,6 @@
 - Developed a comprehensive and responsive online web application by using HTML, CSS, JavaScript, MySQL, PHP <br>
 - Features including user sign-up and login, products and service listings, wishlist and cart functionalities, and payment process
 
-                                   Welcome to our Z23 Beauty Salon’s website!
-
 First and foremost, to run our program, you’ll need to download the all of the files inside our ZIP code into a file named “Z23BeautySalon”. A sample of all of the files needed in our directory are as seen below.
 
  ![image](https://github.com/wanxuen/Z23BeautySalon/assets/164967962/ce101a8b-9aa1-4931-adae-3d023694b5d8)
